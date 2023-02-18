@@ -1,0 +1,21 @@
+.loginContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url("https://media.istockphoto.com/id/1316968335/photo/shopping-cart-full-of-food-on-yellow-background-grocery-and-food-store-concept.jpg?b=1&s=170667a&w=0&k=20&c=OaGCdnoAK5BWZp5MJeM_Knifd4ULl8sNDKvUxd1qgQw=");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+.login {
+    width: 25%;
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+    margin-right: 100px;
+    box-shadow: 9px 8px 25px;
+}

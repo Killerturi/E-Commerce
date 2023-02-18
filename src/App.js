@@ -1,11 +1,10 @@
 import "./App.css";
+import AllRoutes from "./Components/AllRoutes";
 
 function App() {
   return (
     <div className="App">
-      <h1>
-        <u>E-Commerce</u>
-      </h1>
+      <AllRoutes />
     </div>
   );
 }
