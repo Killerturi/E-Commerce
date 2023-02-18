@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <h1>
-        <u>E-Commerce</u>
+        <u>Malay</u>
       </h1>
     </div>
   );
