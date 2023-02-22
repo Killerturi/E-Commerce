@@ -1,5 +1,4 @@
 import React from 'react'
-import { Box, Text, Grid, Flex, Image, } from "@chakra-ui/react";
 import { AiFillFacebook } from "react-icons/ai";
 import { TfiTwitter } from "react-icons/tfi";
 import { CiYoutube } from "react-icons/ci";
@@ -8,52 +7,34 @@ import { CiYoutube } from "react-icons/ci";
 const FooterCard2 = () => {
   return (
     <>
-            <Box p={2} justifyContent="center">
-      <Flex mt="-2%" gap="2" wrap="wrap">
-        <Box w="18%" m="auto">
-          <Box>
-            <Text fontWeight="700">FOLLOW US</Text>
-          </Box>
-          <Box backgroundColor="whiteAlpha.900" w="30%">
-            <Grid
-              templateColumns="repeat(3, 1fr)"
-              m="auto"
-              backgroundColor="#003380"
-              color="white"
-            >
-              <Box _hover={{ color: "whiteAlpha.600" }} cursor="pointer">
-                <AiFillFacebook size="20px" />
-              </Box>
-              <Box _hover={{ color: "whiteAlpha.600" }} cursor="pointer">
-                <TfiTwitter size="20px" />
-              </Box>
-              <Box _hover={{ color: "whiteAlpha.600" }} cursor="pointer">
-                <CiYoutube size="20px" />
-              </Box>
-            </Grid>
-          </Box>
-        </Box>
-        <Box w="72%">
-          <Text fontWeight="700">
-            EXPERIENCE RELIANCE DIGITAL APP ON MOBILE
-          </Text>
-          <Flex justifyContent="left" gap="2" mt="2" cursor="pointer">
-            <Image
-              src="https://www.reliancedigital.in/build/client/images/google_play_store.png"
-              alt="Google Play Store"
-              w="11%"
-              objectFit="cover"
-            />
-            <Image
-              src="https://www.reliancedigital.in/build/client/images/ios_app_store_icon.png"
-              alt="Apple Store"
-              objectFit="cover"
-              w="11%"
-            />
-          </Flex>
-        </Box>
-      </Flex>
-    </Box>
+           <div className='maindiv'>
+           <div className="left">
+            <div>
+            <h1> Follow Us</h1>
+            </div>
+            <div className='logos'>
+            <div className='logo'>
+            <AiFillFacebook size="20px" />
+            </div>
+            <div className='logo'>
+            <TfiTwitter size="20px" />
+            </div>
+        <div className="logo">
+        <CiYoutube size="20px" />
+        </div>
+            </div>
+            </div>
+            <div className="right">
+            <span> EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</span>
+            <div className="img-logo">
+              <img src="https://www.reliancedigital.in/build/client/images/google_play_store.png"
+              alt="Google Play Store" />
+
+              <img  src="https://www.reliancedigital.in/build/client/images/ios_app_store_icon.png"
+              alt="Apple Store"/>
+            </div>
+            </div>
+           </div>
     </>
   )
 }

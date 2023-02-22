@@ -1,21 +1,19 @@
 import React from 'react'
-import { Box, Text,} from "@chakra-ui/react";
-
 const FooterCard1 = ({ type, heading }) => {
   return (
     <>
-        <Box cursor="pointer">
-      <Text fontWeight="700">{heading}</Text>
-      <Box>
+        <div className='footercard1-contener'>
+      <h1>{heading}</h1>
+      <div>
         {type.map((i, index) => (
-          <Box key={index}>
-            <Text fontSize="15px" _hover={{ color: "whiteAlpha.600" }}>
+          <div className='footercard1-lable' key={index}>
+            <h1 fontSize="15px" _hover={{ color: "whiteAlpha.600" }}>          
               {i.labels}
-            </Text>
-          </Box>
+            </h1>
+          </div>
         ))}
-      </Box>
-    </Box>
+      </div>
+    </div>
     </>
   )
 }
