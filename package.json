@@ -18,10 +18,14 @@
     "react": "^18.2.0",
     "react-bootstrap-sweetalert": "^5.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-icon": "^1.0.0",
     "react-icons": "^4.7.1",
     "react-loader-spinner": "^5.3.4",
     "react-redux": "^8.0.5",
+=======
+    "react-icons": "^4.7.1",
+>>>>>>> 7d0b20104988f568eba1a8c1937632cd5092ad8d
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
     "react-slideshow-image": "^4.2.1",

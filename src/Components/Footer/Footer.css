@@ -1,0 +1,78 @@
+.footercard1-contener {
+  cursor: pointer;
+}
+
+.footer-contener {
+  background-color: #003380;
+  color: white;
+}
+
+.footercard1-contener Text {
+  font-weight: 700;
+}
+.footercard1-lable {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.footercard1-contener > h1 {
+  margin: 10px 0px;
+  font-weight: bold;
+  font-size: 17px;
+ 
+}
+.footercard1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+ 
+}
+.footercard1-lable h1 :hover {
+  background-color: white;
+}
+
+.maindiv {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 8rem;
+  margin-bottom: 10px;
+}
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  align-items: center;
+}
+.left {
+  margin-left: 20px;
+  display: flex;
+  gap: 9px;
+  flex-direction: column;
+}
+.img-logo > img {
+  width: 90px;
+}
+.img-logo {
+  display: flex;
+  gap: 10px;
+  margin-left: 40px; 
+}
+
+.card3 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  background-color: #0a244a;
+}
+.card3>hr {
+height: 1px;
+border: 0;
+background-color: lightyellow;
+
+}
+.right span {
+  margin-left: 40px;
+}
