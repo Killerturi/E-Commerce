@@ -25,7 +25,7 @@ import {
   ItemDetails16,
   ItemDetails17,
   ItemDetails18,
-} from "./Cards.Details";
+} from "./Cards.Details"
 import { Box } from "@chakra-ui/react";
 
 const Home = () => {

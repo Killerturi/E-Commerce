@@ -1,11 +1,10 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   Box,
   Flex,
   Heading,
   Image,
-  Input,
   Menu,
   MenuButton,
   MenuList,
@@ -16,7 +15,6 @@ import {
 } from "@chakra-ui/react";
 import { GrLogin, GrReturn, GrServices } from "react-icons/gr";
 import { FaTruck } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { BiNetworkChart } from "react-icons/bi";
 import { ImLocation2 } from "react-icons/im";
 import { MdConnectWithoutContact } from "react-icons/md";
