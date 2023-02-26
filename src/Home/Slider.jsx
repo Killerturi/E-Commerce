@@ -46,11 +46,7 @@ const Slider = ({ type }) => {
           <SwiperSlide>
             <Link to={i.linked}>
               <Square m="auto" _hover={{ transform: "scale(1.1)" }}>
-                <Image
-                  src={`${i.img}`}
-                  alt={i.name}
-                  boxSize={{ base: "160px" }}
-                />
+                <Image src={i.img} alt={i.name} boxSize={{ base: "160px" }} />
               </Square>
               <Box p="2" mt="4">
                 <Text

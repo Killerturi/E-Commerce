@@ -21,8 +21,8 @@ const ItemCard2 = ({ type, heading, src }) => {
           cursor="pointer"
           pr="4"
         >
-          <Image
-            src={src}
+         {/*  <Image
+            src="https://i.imgur.com/8pxYJUB.png"
             boxSize="340px"
             border="1px"
             borderColor="gray.200"
@@ -34,7 +34,7 @@ const ItemCard2 = ({ type, heading, src }) => {
               xl: "400px",
               base: "none",
             }}
-          />
+          /> */}
         </Box>
         <Spacer />
         <Box

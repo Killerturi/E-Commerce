@@ -1,9 +1,9 @@
 import React from "react";
-import { Box, Grid, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import uuid from 'react-uuid';
+import uuid from "react-uuid";
 
-const ItemCard4 = ({ type, heading}) => {
+const ItemCard4 = ({ type, heading }) => {
   return (
     <Box>
       <Box justifyContent="left" w="95%" m="auto" mt="6">
@@ -13,14 +13,8 @@ const ItemCard4 = ({ type, heading}) => {
       </Box>
       <br />
       <br />
-      <Grid
-        templateColumns={{
-          base: "repeat(1,1fr)",
-          md: "repeat(2,1fr)",
-          lg: "repeat(3,1fr)",
-          xl: "repeat(4,1fr)",
-          "2xl": "repeat(4,1fr)",
-        }}
+      <Flex
+       
         gap={6}
         w="95%"
         m="auto"
@@ -33,7 +27,7 @@ const ItemCard4 = ({ type, heading}) => {
             </Link>
           </Box>
         ))}
-      </Grid>
+      </Flex>
     </Box>
   );
 };
