@@ -14,7 +14,7 @@
   font-size: 14px;
   margin-top: 10px;
 }
-.footercard1-lable :hover{
+.footercard1-lable :hover {
   color: lightgray;
 }
 
@@ -22,13 +22,11 @@
   margin: 10px 0px;
   font-weight: bold;
   font-size: 17px;
- 
 }
 .footercard1 {
   display: flex;
   justify-content: space-between;
   padding: 20px;
- 
 }
 .footercard1-lable h1 :hover {
   background-color: white;
@@ -59,7 +57,7 @@
 .img-logo {
   display: flex;
   gap: 10px;
-  margin-left: 40px; 
+  margin-left: 40px;
 }
 
 .card3 {
@@ -71,12 +69,18 @@
   gap: 6px;
   background-color: #0a244a;
 }
-.card3>hr {
-height: 1px;
-border: 0;
-background-color: lightyellow;
-
+.card3 > hr {
+  height: 1px;
+  border: 0;
+  background-color: lightyellow;
 }
 .right span {
   margin-left: 40px;
+}
+.logo :hover {
+  cursor: pointer;
+  color: lightgray;
+}
+.img-logo > img  {
+  cursor: pointer;
 }
