@@ -6,31 +6,21 @@ const ItemCard6 = ({ type, heading }) => {
   return (
     <Box mb="2" cursor="pointer">
       <Center>
-        <Text fontSize="xl" color="#003380" fontWeight="700" p="4">
+        <Text fontSize="xl" color="#003380" fontWeight="700" p="12">
           {heading}
         </Text>
       </Center>
-      <Grid
-        templateColumns={{
-          base: "repeat(1,1fr)",
-          md: "repeat(2,1fr)",
-          lg: "repeat(3,1fr)",
-          xl: "repeat(4,1fr)",
-          "2xl": "repeat(4,1fr)",
-        }}
-        gap={6}
-        w="98%"
-        m="auto"
-      >
+      <Flex justifyContent="space-evenly"  w="98%" m="auto">
         {type.map((i) => (
           <Flex
             key={uuid()}
             border="1px"
-            borderColor="gray.200"
+            borderColor="blackAlpha.500"
             flexDirection="column"
             backgroundColor="#f7f7f7"
-            borderRadius="md"
-            p="1"
+            borderRadius="3xl"
+            px="45"
+            py="5"
           >
             <Center>
               <Image boxSize="40px" src={`${i.img}`} alt={i.name} />
@@ -47,7 +37,7 @@ const ItemCard6 = ({ type, heading }) => {
             </Center>
           </Flex>
         ))}
-      </Grid>
+      </Flex>
     </Box>
   );
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   Box,
@@ -23,6 +23,10 @@ import { BsFillCartFill } from "react-icons/bs";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 
 const NavBar = () => {
+  const [auth, setAuth] = useState(false); //for check login portion
+
+
+
   return (
     <Box>
       <Flex
@@ -163,30 +167,36 @@ const NavBar = () => {
           </Flex>
         </Link>
 
-        <Flex cursor={"pointer"}>
-          <GrLogin color="white" fontSize="20px" />
-          <Link to="login">
-            <Heading
-              cursor={"pointer"}
-              fontSize={"17px"}
-              color="white"
-              _hover={{ bg: "red", textDecoration: "underline" }}
+        {!auth ? (
+          <Flex cursor={"pointer"}>
+            <GrLogin color="white" fontSize="20px" />
+            <Link to="login">
+              <Heading
+                cursor={"pointer"}
+                fontSize={"17px"}
+                color="white"
+                _hover={{ bg: "red", textDecoration: "underline" }}
+              >
+                Login
+              </Heading>
+            </Link>
+          </Flex>
+        ) : (
+          <Menu>
+            <MenuButton
+              color="black"
+              as={Button}
+              rightIcon={<ChevronDownIcon />}
             >
-              Login
-            </Heading>
-          </Link>
-        </Flex>
-
-        <Menu>
-          <MenuButton color="black" as={Button} rightIcon={<ChevronDownIcon />}>
-            Hi
-          </MenuButton>
-          <MenuList>
-            <MenuItem>My Profile</MenuItem>
-            <MenuItem>My Order</MenuItem>
-            <MenuItem>My Address</MenuItem>
-          </MenuList>
-        </Menu>
+              Hi
+            </MenuButton>
+            <MenuList>
+              <MenuItem>My Profile</MenuItem>
+              <MenuItem>My Order</MenuItem>
+              <MenuItem>My Address</MenuItem>
+            </MenuList>
+          </Menu>
+        )}
       </Flex>
       <Flex
         w="100%"

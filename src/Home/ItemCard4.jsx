@@ -13,21 +13,20 @@ const ItemCard4 = ({ type, heading }) => {
       </Box>
       <br />
       <br />
-      <Flex
-       
-        gap={6}
-        w="95%"
-        m="auto"
-        cursor="pointer"
-      >
+      <div className="ItemCard4">
         {type.map((i) => (
           <Box key={uuid()}>
             <Link to={i.linked}>
-              <Image src={`${i.img}`} alt={i.caption} w="100%" />
+              <img
+                className="ItemCard4_img"
+                src={`${i.img}`}
+                alt={i.caption}
+                w="100%"
+              />
             </Link>
           </Box>
         ))}
-      </Flex>
+      </div>
     </Box>
   );
 };

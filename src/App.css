@@ -2,7 +2,7 @@
     margin: 0;
 }
 
-.searchBar{
+.searchBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,12 +15,29 @@
 }
 
 
-.searchBar>input{
- border: none;
- outline: none;
- font-size: 18px;
- flex: 1;
- font-weight: bold;
-  border-radius: 25px;
+.searchBar>input {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    flex: 1;
+    font-weight: bold;
+    border-radius: 25px;
 }
 
+.ItemCard4 {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    cursor: pointer;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.ItemCard4_img {
+    width: 300px;
+    border-radius: 25px;
+    border: 2px solid;
+}

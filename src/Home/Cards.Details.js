@@ -94,6 +94,24 @@ export const ItemDetails3 = [
     discount: "5%(₹4,495)",
     linked: "personalcare",
   },
+  {
+    name: "Apple Watch SE GPS + Cellular - 44 mm Silver Aluminium Case with White 2nd Generation Sport Band",
+    img: "https://www.reliancedigital.in/medias/Apple-SE-Sports-Fitness-Watches-493177923-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNTU2NnxpbWFnZS9qcGVnfGltYWdlcy9oMzgvaDI5Lzk4OTE5ODM3ODYwMTQuanBnfGQ4YzkwMmIwZjlmNjdmOGQzNmIxOGEyZGNjNTk5ZThlYjY2NTFmNTQzYWY5ZTJkNDE3MTk4YmUwZTcxY2ZiMzg",
+    caption: "Slide 4",
+    mrp: "85,405.00",
+    price: "89,900.00",
+    discount: "5%(₹4,495)",
+    linked: "personalcare",
+  },
+  {
+    name: "Apple Watch Ultra GPS + Cellular - 49 mm Titanium Case with Blue and Gray Trail Loop - M/L",
+    img: "https://www.reliancedigital.in/medias/Apple-Ultra-Sports-Fitness-Watches-493177945-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2NTIwNXxpbWFnZS9qcGVnfGltYWdlcy9oZGIvaDA1Lzk4OTE5NjUwNDI3MTguanBnfGQ5YzE2NGM4OGU1MWM3ZDM3NDc2ODQyNDQzNzljMWU1NmM1NmFhZTQ0YzY3MDUxODlhYmVhMTA1MGQ0YjgzZjA",
+    caption: "Slide 1",
+    mrp: "85,405.00",
+    price: "89,900.00",
+    discount: "5%(₹4,495)",
+    linked: "personalcare",
+  },
 ];
 
 export const ItemDetails4 = [
@@ -656,6 +674,24 @@ export const ItemDetails12 = [
     discount: "71%(₹2,500)",
     linked: "personalcare",
   },
+  {
+    name: "Hammer Pulse Ace Smart Watch with Bluetooth Calling Multiple Sports Mode, 4.29 cm (1.69 inch) display, 7 Days without Bluetooth Calling, Up to 6 Hours with Bluetooth Calling",
+    img: "https://www.reliancedigital.in/medias/Hammer-Pulse-Ace-Pro-Sports-Fitness-Watches-493177732-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNjM4NHxpbWFnZS9qcGVnfGltYWdlcy9oZjcvaDlkLzk5MjMxODkyMTExNjYuanBnfDM1NGNjZjNiZDI5MWExODM3ZmMzN2U5YjAyYzBmMDAxOGE5OWM4ODNmYmYxMjc2ZmExODgwYWE3NjM3MDRhZmI",
+    caption: "Slide 2",
+    price: "10,99.00",
+    mrp: "3,990.00",
+    discount: "73%(₹2,900)",
+    linked: "personalcare",
+  },
+  {
+    name: "Noise ColorFit Caliber Go Smart Watch with 4.29 cm (1.69 inch) HD Display, 40 Sports Modes, 150+ Watch Faces, & IP68 Waterproof (Jet Black)",
+    img: "https://www.reliancedigital.in/medias/pTron-PULSEFIT-P261-Smart-Watch-493177969-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDUzNnxpbWFnZS9qcGVnfGltYWdlcy9oMGEvaGIzLzk4OTQ2NzAyMzc3MjYuanBnfDJjMTc3ODdhNzNiMTU2YWU2MDM4ZTRlYTQwYTljMDk1MWRmMjgwMWFkNzI4MmM5NTU2MzA3NjUzNjhkYmZkYWI",
+    caption: "Slide 3",
+    price: "1,349.00",
+    mrp: "3,999.00",
+    discount: "66%(₹2,650)",
+    linked: "personalcare",
+  },
 ];
 
 export const ItemDetails13 = [
@@ -879,6 +915,24 @@ export const ItemDetails15 = [
     price: "1,09,900.00",
     mrp: "1,10,999.00",
     discount: "1%(₹1,099)",
+    linked: "mobilesandtablets",
+  },
+  {
+    name: "Apple iPhone 14 Plus 128 GB, Starlight",
+    img: "https://www.reliancedigital.in/medias/Apple-iPhone-14-Plus-Mobile-Phone-493177765-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDAyMHxpbWFnZS9qcGVnfGltYWdlcy9oNDIvaDAyLzk4OTA1MzYwNjMwMDYuanBnfDQzYjhhMjgyYWJlYWJkNTBiNDM4NzI5YjA4NTU4NzY3Y2Y2ZTJjYWQxNDQ4NDE0ZWViYzJmZTdjZjYwNTQ5ZGU",
+    caption: "Slide 2",
+    price: "89,990.00",
+    mrp: "90,889.00",
+    discount: "1%(₹8,99)",
+    linked: "mobilesandtablets",
+  },
+  {
+    name: "Apple iPhone 14 Plus 128 GB, Blue",
+    img: "https://www.reliancedigital.in/medias/Apple-iPhone-14-Mobile-Phone-493177756-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNjYwNXxpbWFnZS9qcGVnfGltYWdlcy9oYTcvaDgwLzk4OTA1MDE1OTEwNzAuanBnfGExOTdiMzQwNWFjYzY5NWFhNGY3MjVkYmFkZWY1YjdmNjFiNjU0Yzg4NWMzNDRiYmI2NmYzYTM2N2E0ZTY1MzU",
+    caption: "Slide 3",
+    price: "89,990.00",
+    mrp: "90,889.00",
+    discount: "1%(₹8,99)",
     linked: "mobilesandtablets",
   },
 ];
