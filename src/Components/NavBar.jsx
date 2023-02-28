@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   Box,
@@ -24,8 +24,11 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 import { useSelector } from "react-redux";
 
 const NavBar = () => {
+ 
+
   const authentication = useSelector((state) => {
-    return state;
+    // console.log(state.auth, "hi");
+    return state.auth;
   });
 
   console.log(authentication);
@@ -170,7 +173,7 @@ const NavBar = () => {
           </Flex>
         </Link>
 
-        {!authentication ? (
+        {!authentication.length > 0 ? (
           <Flex cursor={"pointer"}>
             <GrLogin color="white" fontSize="20px" />
             <Link to="login">
