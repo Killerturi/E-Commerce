@@ -3,6 +3,8 @@ import "../../Style/login.css";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../../FirebaseConfig";
+import { useDispatch } from "react-redux";
+import { getAuth } from "../../Redux/Auth/auth";
 
 const Login = () => {
   const [input, setInput] = useState({
@@ -10,6 +12,8 @@ const Login = () => {
     password: "",
   });
   const { email, password } = input;
+
+  const dispatch = useDispatch();
 
   const textHandle = (e) => {
     setInput({ ...input, [e.target.name]: e.target.value });
@@ -24,6 +28,7 @@ const Login = () => {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
+        dispatch(getAuth(user));
         history("/");
         alert("Log In sucessfully");
         // ...

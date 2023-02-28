@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import {
   Box,
@@ -21,11 +21,14 @@ import { MdConnectWithoutContact } from "react-icons/md";
 import { FcSearch } from "react-icons/fc";
 import { BsFillCartFill } from "react-icons/bs";
 import { ChevronDownIcon } from "@chakra-ui/icons";
+import { useSelector } from "react-redux";
 
 const NavBar = () => {
-  const [auth, setAuth] = useState(false); //for check login portion
+  const authentication = useSelector((state) => {
+    return state;
+  });
 
-
+  console.log(authentication);
 
   return (
     <Box>
@@ -167,7 +170,7 @@ const NavBar = () => {
           </Flex>
         </Link>
 
-        {!auth ? (
+        {!authentication ? (
           <Flex cursor={"pointer"}>
             <GrLogin color="white" fontSize="20px" />
             <Link to="login">
