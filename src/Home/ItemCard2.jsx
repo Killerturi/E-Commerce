@@ -31,7 +31,7 @@ const ItemCard2 = ({ type, heading, src }) => {
 
         <Spacer />
         <Swiper
-          modules={[Autoplay]}
+          modules={[Autoplay, Navigation]}
           navigation
           autoplay={{ delay: 4000 }}
           breakpoints={{
