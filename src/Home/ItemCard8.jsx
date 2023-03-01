@@ -59,7 +59,7 @@ const ItemCard8 = ({ type, heading }) => {
               <Box key={uuid()}>
                 <SwiperSlide>
                   <Box>
-                    <Link to={i.linked}>
+                    <Link to={`/${i.linked}`}>
                       <Square m="auto">
                         <Image
                           src={`${i.img}`}

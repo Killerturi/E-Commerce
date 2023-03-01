@@ -15,7 +15,7 @@ const ItemCard7 = ({ type, heading, src }) => {
       <Heading heading={heading} />
       <Flex mt="7" justifyContent="space-between" alignItems="center" gap="10">
         <Swiper
-          modules={[Autoplay]}
+          modules={[Autoplay,Navigation]}
           navigation
           autoplay={{ delay: 4000 }}
           breakpoints={{

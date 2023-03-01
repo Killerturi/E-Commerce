@@ -1,6 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { Routes, Route } from "react-router-dom";
 import Login from "./Sign_up_in/Login";
 import SignUp from "./Sign_up_in/SignUp";
 import Home from "../Home/Home";
@@ -22,7 +21,7 @@ const AllRoutes = () => {
               <Products typeOfProduct="mobilesandtablets" />
             </PrivateRoute>
           }
-        ></Route>
+        />
         <Route
           path="/mobilesandtablets/:id"
           element={
@@ -120,7 +119,7 @@ const AllRoutes = () => {
               <Products typeOfProduct="cameras" />
             </PrivateRoute>
           }
-        ></Route>
+        />
         <Route
           path="/cameras/:id"
           element={
