@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Box,
   Flex,
@@ -12,6 +12,7 @@ import {
   MenuItem,
   Grid,
   Text,
+  useToast,
 } from "@chakra-ui/react";
 import { GrLogin, GrReturn, GrServices } from "react-icons/gr";
 import { FaTruck } from "react-icons/fa";
@@ -21,7 +22,7 @@ import { MdConnectWithoutContact } from "react-icons/md";
 import { FcSearch } from "react-icons/fc";
 import { BsFillCartFill } from "react-icons/bs";
 import { ChevronDownIcon } from "@chakra-ui/icons";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const NavBar = () => {
   const authentication = useSelector((state) => {
@@ -31,7 +32,7 @@ const NavBar = () => {
 
   console.log(authentication);
 
-  return (
+    return (
     <Box>
       <Flex
         w="100%"
@@ -194,10 +195,15 @@ const NavBar = () => {
             >
               Hi
             </MenuButton>
-            <MenuList>
+            <MenuList className="login_dropdown"> 
+
               <MenuItem>My Profile</MenuItem>
               <MenuItem>My Order</MenuItem>
               <MenuItem>My Address</MenuItem>
+             
+                <MenuItem>My Wishlist</MenuItem>
+             
+              <MenuItem>Logout</MenuItem>
             </MenuList>
           </Menu>
         )}

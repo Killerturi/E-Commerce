@@ -43,3 +43,16 @@
     border-radius: 25px;
     border: 2px solid;
 }
+
+.login_dropdown{
+    background-color: #fff;
+    width:120px;
+    /* text-align: center; */
+    padding:10px 5px  10px 15px;
+    border-radius: 10px;
+}
+
+.login_dropdown :hover{
+    background-color: rgba(211, 211, 211, 0.64);
+    cursor: pointer;
+}
