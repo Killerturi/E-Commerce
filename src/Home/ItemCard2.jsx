@@ -31,7 +31,7 @@ const ItemCard2 = ({ type, heading, src }) => {
 
         <Spacer />
         <Swiper
-          modules={[Autoplay]}
+          modules={[Autoplay, Navigation]}
           navigation
           autoplay={{ delay: 4000 }}
           breakpoints={{
@@ -60,7 +60,7 @@ const ItemCard2 = ({ type, heading, src }) => {
           {type.map((i) => (
             <Box key={uuid()}>
               <SwiperSlide>
-                <Link to={i.linked}>
+                <Link to={`/${i.linked}`}>
                   <Square m="auto" _hover={{ transform: "scale(1.1)" }}>
                     <Image src={`${i.img}`} alt={i.name} boxSize="160px" />
                   </Square>

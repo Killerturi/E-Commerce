@@ -24,8 +24,6 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 import { useSelector } from "react-redux";
 
 const NavBar = () => {
- 
-
   const authentication = useSelector((state) => {
     // console.log(state.auth, "hi");
     return state.auth;
@@ -1446,7 +1444,6 @@ const NavBar = () => {
                   <Text
                     _hover={{
                       textDecoration: "underline",
-
                       cursor: "pointer",
                       fontWeight: "bold",
                     }}
