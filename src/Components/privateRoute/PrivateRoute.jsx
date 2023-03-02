@@ -9,6 +9,7 @@ function PrivateRoute({ children }) {
 
   if (!isAuth.length > 0) {
     return <Navigate to="/login" />;
+    
   }
 
   return children;

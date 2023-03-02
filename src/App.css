@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+.itemCard1_img{
+position: relative;
+z-index: -1;
+}
+
+
+.heading_text{
+    font-size: 25px;
+}
+
+
 .searchBar {
     display: flex;
     justify-content: space-between;
@@ -50,9 +61,30 @@
     /* text-align: center; */
     padding:10px 5px  10px 15px;
     border-radius: 10px;
+    
 }
 
 .login_dropdown :hover{
     background-color: rgba(211, 211, 211, 0.64);
     cursor: pointer;
+}
+
+.heading_text{
+    font-size: 30px;
+
+}
+
+.offer_btn{
+ 
+    font-Weight: 15px;
+    background-color: rgb(250, 247, 247);
+    color: green;
+    padding: 4px 8px;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 1px solid orange;
+    
+    
 }

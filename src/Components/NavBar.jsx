@@ -33,7 +33,7 @@ const NavBar = () => {
   console.log(authentication);
 
     return (
-    <Box>
+    <Box  >
       <Flex
         w="100%"
         px="30px"
@@ -195,14 +195,13 @@ const NavBar = () => {
             >
               Hi
             </MenuButton>
-            <MenuList className="login_dropdown"> 
-
+            <MenuList 
+            className="login_dropdown"
+             > 
               <MenuItem>My Profile</MenuItem>
               <MenuItem>My Order</MenuItem>
               <MenuItem>My Address</MenuItem>
-             
-                <MenuItem>My Wishlist</MenuItem>
-             
+              <MenuItem>My Wishlist</MenuItem>             
               <MenuItem>Logout</MenuItem>
             </MenuList>
           </Menu>

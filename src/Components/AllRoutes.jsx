@@ -34,7 +34,7 @@ const AllRoutes = () => {
         <Route
           path="/televisions"
           element={
-            <PrivateRoute>
+            <PrivateRoute >
               <Products typeOfProduct="television" />
             </PrivateRoute>
           }

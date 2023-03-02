@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 const Heading = ({ heading }) => {
   return (
     <>
-      <Flex gap="2">
+      <Flex gap="2" >
         <Center>
-          <Text fontSize="2xl">{heading}</Text>
+          <Text fontSize="2xl" className="heading_text">{heading}</Text>
           <Link to="/">
             <Text
               style={{
-                fontSize: "14px",
+                fontSize: "20px",
                 fontWwight: "500",
                 color: "#505d83",
               }}
