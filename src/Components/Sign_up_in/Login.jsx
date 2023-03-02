@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../Style/login.css";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../../FirebaseConfig";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { getAuth } from "../../Redux/Auth/auth";
 
 const Login = () => {
+ /*  const authentication = useSelector((state) => {
+    // console.log(state.auth, "hi");
+    return state.auth;
+  }); */
+
   const [input, setInput] = useState({
     email: "",
     password: "",
@@ -29,8 +34,9 @@ const Login = () => {
         // Signed in
         const user = userCredential.user;
         dispatch(getAuth(user));
-        history("/");
         alert("Log In sucessfully");
+        history("/");
+
         // ...
       })
       .catch((error) => {
@@ -38,6 +44,7 @@ const Login = () => {
         const errorMessage = error.message;
       });
   };
+
   return (
     <>
       <div className="loginContainer">
