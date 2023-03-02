@@ -32,7 +32,7 @@ const NavBar = () => {
   console.log(authentication);
 
   return (
-    <Box>
+    <Box className="Navbar">
       <Flex
         w="100%"
         px="30px"

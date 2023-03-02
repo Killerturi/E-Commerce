@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.Navbar {
+    position: relative;
+    z-index: 1;
+}
+
 .searchBar {
     display: flex;
     justify-content: space-between;
