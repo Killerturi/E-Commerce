@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAuth } from "../../Redux/Auth/auth";
 
 const Login = () => {
- /*  const authentication = useSelector((state) => {
+  /*  const authentication = useSelector((state) => {
     // console.log(state.auth, "hi");
     return state.auth;
   }); */
@@ -103,9 +103,9 @@ const Login = () => {
           <p className="text-center">
             Don't have an account ?
             <Link to="/signup">
-              <span className=" px-2 text-sky-500 hover:text-sky-900">
+              <button className=" px-2 text-sky-500 hover:text-sky-900">
                 Signup
-              </span>
+              </button>
             </Link>
           </p>
         </form>
