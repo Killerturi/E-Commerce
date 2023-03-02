@@ -9,6 +9,10 @@
     z-index: 1;
 }
 
+.digital_logo {
+    mix-blend-mode: hard-light;
+}
+
 .searchBar {
     display: flex;
     justify-content: space-between;

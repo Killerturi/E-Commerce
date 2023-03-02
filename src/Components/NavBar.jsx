@@ -133,12 +133,7 @@ const NavBar = () => {
       >
         <Link to="/">
           <Box>
-            <Image
-              src="as_digital_logo_2019.png"
-              alt="logo"
-              w="190px"
-              h="70px"
-            />
+            <Image src="logo.png" alt="logo" w="190px" h="70px" className="digital_logo" />
           </Box>
         </Link>
 
