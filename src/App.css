@@ -4,10 +4,21 @@
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 .heading_text{
     font-size: 25px;
 }
 
+=======
+.Navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.digital_logo {
+    mix-blend-mode: hard-light;
+}
+>>>>>>> 3f3bbdd287cf300596213729911774306604fe8a
 
 .searchBar {
     display: flex;

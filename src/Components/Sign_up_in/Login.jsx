@@ -1,12 +1,17 @@
-import React, { useState,useEffect } from "react";
+import React, { useState } from "react";
 import "../../Style/login.css";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../../FirebaseConfig";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { getAuth } from "../../Redux/Auth/auth";
 
 const Login = () => {
+  /*  const authentication = useSelector((state) => {
+    // console.log(state.auth, "hi");
+    return state.auth;
+  }); */
+
   const [input, setInput] = useState({
     email: "",
     password: "",
@@ -29,8 +34,9 @@ const Login = () => {
         // Signed in
         const user = userCredential.user;
         dispatch(getAuth(user));
-        history("/");
         alert("Log In sucessfully");
+        history("/");
+
         // ...
       })
       .catch((error) => {
@@ -38,11 +44,6 @@ const Login = () => {
         const errorMessage = error.message;
       });
   };
-
-  useEffect(() => {
-    window.scroll(0, 0)
-  }, [])
-
   return (
     <>
       <div className="loginContainer">
@@ -101,9 +102,9 @@ const Login = () => {
           <p className="text-center">
             Don't have an account ?
             <Link to="/signup">
-              <span className=" px-2 text-sky-500 hover:text-sky-900">
+              <button className=" px-2 text-sky-500 hover:text-sky-900">
                 Signup
-              </span>
+              </button>
             </Link>
           </p>
         </form>
