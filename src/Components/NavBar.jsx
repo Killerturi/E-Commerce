@@ -33,95 +33,7 @@ const NavBar = () => {
   console.log(authentication);
 
     return (
-    <Box  >
-      <Flex
-        w="100%"
-        px="30px"
-        justifyContent={"space-around"}
-        alignItems="center"
-        m="auto"
-        bg="red"
-        pt="10px"
-      >
-        <Box>
-          <Heading
-            cursor={"pointer"}
-            fontSize={"17px"}
-            color="white"
-            _hover={{ bg: "red", textDecoration: "underline" }}
-          >
-            OUR BRAND PROMISE
-          </Heading>
-        </Box>
-        <Flex>
-          <GrReturn color="white" size="25px" />
-          <Heading
-            cursor={"pointer"}
-            fontSize={"17px"}
-            color="white"
-            _hover={{ bg: "red", textDecoration: "underline" }}
-          >
-            OUR BRAND PROMISE
-          </Heading>
-        </Flex>
-        <Flex>
-          <FaTruck color="white" size="25px" />
-          <Heading
-            cursor={"pointer"}
-            fontSize={"17px"}
-            color="white"
-            _hover={{ bg: "red", textDecoration: "underline" }}
-          >
-            NEXT DAY DELIVERY
-          </Heading>
-        </Flex>
-        <Flex>
-          <GrServices color="white" size="25px" />
-          <Heading
-            cursor={"pointer"}
-            fontSize={"17px"}
-            color="white"
-            _hover={{ bg: "red", textDecoration: "underline" }}
-          >
-            SERVICE GUARANTEE
-          </Heading>
-        </Flex>
-        <Flex>
-          <BiNetworkChart color="white" size="25px" />
-          <Heading
-            cursor={"pointer"}
-            fontSize={"17px"}
-            color="white"
-            _hover={{ bg: "red", textDecoration: "underline" }}
-          >
-            UNMATCHED NETWORK
-          </Heading>
-        </Flex>
-        <Flex>
-          <ImLocation2 color="white" size="25px" />
-          <Heading
-            cursor={"pointer"}
-            fontSize={"17px"}
-            color="white"
-            _hover={{ bg: "red", textDecoration: "underline" }}
-          >
-            Find a store
-          </Heading>
-        </Flex>
-        <Link to="contactus">
-          <Flex>
-            <MdConnectWithoutContact color="white" size="25px" />
-            <Heading
-              cursor={"pointer"}
-              fontSize={"17px"}
-              color="white"
-              _hover={{ bg: "red", textDecoration: "underline" }}
-            >
-              Contact Us
-            </Heading>
-          </Flex>
-        </Link>
-      </Flex>
+    <Box>
       <Flex
         w="100%"
         justifyContent="space-around"
@@ -147,6 +59,7 @@ const NavBar = () => {
           <input type="text" placeholder="Find Your Favorite Product" />
           <FcSearch fontSize={"42px"} />
         </div>
+        
         <Flex cursor={"pointer"}>
           <ImLocation2 color="white" fontSize="20px" />
           <Heading
@@ -158,6 +71,19 @@ const NavBar = () => {
             Deliver to Your Address
           </Heading>
         </Flex>
+        <Link to="contactus">
+          <Flex>
+            <MdConnectWithoutContact color="white" size="25px" />
+            <Heading
+              cursor={"pointer"}
+              fontSize={"17px"}
+              color="white"
+              _hover={{ bg: "red", textDecoration: "underline" }}
+            >
+              Contact Us
+            </Heading>
+          </Flex>
+        </Link>
         <Link to="/cart">
           <Flex cursor={"pointer"}>
             <BsFillCartFill color="white" fontSize="20px" />

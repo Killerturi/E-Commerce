@@ -7,7 +7,6 @@ import uuid from "react-uuid";
 const ItemCard1 = ({ type }) => {
   return (
     <Box cursor="pointer"
-    className="itemCard1_img"
     >
       <Box>
         <Slide>
