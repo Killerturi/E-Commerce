@@ -32,13 +32,8 @@ const NavBar = () => {
 
   console.log(authentication);
 
-<<<<<<< HEAD
-    return (
-    <Box>
-=======
   return (
     <Box className="Navbar">
->>>>>>> 3f3bbdd287cf300596213729911774306604fe8a
       <Flex
         w="100%"
         justifyContent="space-around"
