@@ -90,14 +90,15 @@ const ItemCard5 = ({ type, heading }) => {
                         </Text>
                       </Flex>
                       <Box
-                        borderRadius="xl"
-                        border="1px"
-                        borderColor="green.900"
-                        w="40%"
-                        color="green.500"
-                        bg="green.50"
-                        mt="2"
-                        textAlign="center"
+                        // borderRadius="xl"
+                        // border="1px"
+                        // borderColor="green.900"
+                        // w="40%"
+                        // color="green.500"
+                        // bg="green.50"
+                        // mt="2"
+                        // textAlign="center"
+                        className="offer_btn"
                       >
                         <Text fontSize="10px" fontWeight="500">
                           OFFERS AVAILABLE

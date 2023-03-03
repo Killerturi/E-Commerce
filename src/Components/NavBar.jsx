@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Box,
   Flex,
@@ -12,6 +12,7 @@ import {
   MenuItem,
   Grid,
   Text,
+  useToast,
 } from "@chakra-ui/react";
 import { GrLogin, GrReturn, GrServices } from "react-icons/gr";
 import { FaTruck } from "react-icons/fa";
@@ -21,7 +22,7 @@ import { MdConnectWithoutContact } from "react-icons/md";
 import { FcSearch } from "react-icons/fc";
 import { BsFillCartFill } from "react-icons/bs";
 import { ChevronDownIcon } from "@chakra-ui/icons";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const NavBar = () => {
   const authentication = useSelector((state) => {
@@ -32,79 +33,43 @@ const NavBar = () => {
   console.log(authentication);
 
   return (
-    <Box>
+    <Box className="Navbar">
       <Flex
         w="100%"
-        px="30px"
-        justifyContent={"space-around"}
-        alignItems="center"
+        justifyContent="space-around"
+        alignItems={"center"}
         m="auto"
         bg="red"
-        pt="10px"
+        p="10px"
+        px="3%"
+        gap="30px"
       >
-        <Box>
+        <Link to="/">
+          <Box>
+            <Image
+              src="logo1.png"
+              alt="logo"
+              w="150px"
+              h="70px"
+              className="digital_logo"
+            />
+          </Box>
+        </Link>
+
+        <div className="searchBar">
+          <input type="text" placeholder="Find Your Favorite Product" />
+          <FcSearch fontSize={"42px"} />
+        </div>
+        
+        <Flex cursor={"pointer"}>
+          <ImLocation2 color="white" fontSize="20px" />
           <Heading
             cursor={"pointer"}
             fontSize={"17px"}
             color="white"
             _hover={{ bg: "red", textDecoration: "underline" }}
           >
-            OUR BRAND PROMISE
-          </Heading>
-        </Box>
-        <Flex>
-          <GrReturn color="white" size="25px" />
-          <Heading
-            cursor={"pointer"}
-            fontSize={"17px"}
-            color="white"
-            _hover={{ bg: "red", textDecoration: "underline" }}
-          >
-            OUR BRAND PROMISE
-          </Heading>
-        </Flex>
-        <Flex>
-          <FaTruck color="white" size="25px" />
-          <Heading
-            cursor={"pointer"}
-            fontSize={"17px"}
-            color="white"
-            _hover={{ bg: "red", textDecoration: "underline" }}
-          >
-            NEXT DAY DELIVERY
-          </Heading>
-        </Flex>
-        <Flex>
-          <GrServices color="white" size="25px" />
-          <Heading
-            cursor={"pointer"}
-            fontSize={"17px"}
-            color="white"
-            _hover={{ bg: "red", textDecoration: "underline" }}
-          >
-            SERVICE GUARANTEE
-          </Heading>
-        </Flex>
-        <Flex>
-          <BiNetworkChart color="white" size="25px" />
-          <Heading
-            cursor={"pointer"}
-            fontSize={"17px"}
-            color="white"
-            _hover={{ bg: "red", textDecoration: "underline" }}
-          >
-            UNMATCHED NETWORK
-          </Heading>
-        </Flex>
-        <Flex>
-          <ImLocation2 color="white" size="25px" />
-          <Heading
-            cursor={"pointer"}
-            fontSize={"17px"}
-            color="white"
-            _hover={{ bg: "red", textDecoration: "underline" }}
-          >
-            Find a store
+            Deliver to Your Address
           </Heading>
         </Flex>
         <Link to="contactus">
@@ -120,43 +85,6 @@ const NavBar = () => {
             </Heading>
           </Flex>
         </Link>
-      </Flex>
-      <Flex
-        w="100%"
-        justifyContent="space-around"
-        alignItems={"center"}
-        m="auto"
-        bg="red"
-        p="10px"
-        px="3%"
-        gap="30px"
-      >
-        <Link to="/">
-          <Box>
-            <Image
-              src="as_digital_logo_2019.png"
-              alt="logo"
-              w="190px"
-              h="70px"
-            />
-          </Box>
-        </Link>
-
-        <div className="searchBar">
-          <input type="text" placeholder="Find Your Favorite Product" />
-          <FcSearch fontSize={"42px"} />
-        </div>
-        <Flex cursor={"pointer"}>
-          <ImLocation2 color="white" fontSize="20px" />
-          <Heading
-            cursor={"pointer"}
-            fontSize={"17px"}
-            color="white"
-            _hover={{ bg: "red", textDecoration: "underline" }}
-          >
-            Deliver to Your Address
-          </Heading>
-        </Flex>
         <Link to="/cart">
           <Flex cursor={"pointer"}>
             <BsFillCartFill color="white" fontSize="20px" />
@@ -194,10 +122,14 @@ const NavBar = () => {
             >
               Hi
             </MenuButton>
-            <MenuList>
+            <MenuList 
+            className="login_dropdown"
+             > 
               <MenuItem>My Profile</MenuItem>
               <MenuItem>My Order</MenuItem>
               <MenuItem>My Address</MenuItem>
+              <MenuItem>My Wishlist</MenuItem>             
+              <MenuItem>Logout</MenuItem>
             </MenuList>
           </Menu>
         )}

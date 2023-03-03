@@ -6,12 +6,13 @@ import uuid from "react-uuid";
 
 const ItemCard1 = ({ type }) => {
   return (
-    <Box cursor="pointer">
+    <Box cursor="pointer"
+    >
       <Box>
         <Slide>
           {type.map((i) => (
             <Box key={uuid()}>
-              <Image src={`${i.img}`} alt={i.caption} w="100%" />
+              <Image  src={`${i.img}`} alt={i.caption} w="100%" />
             </Box>
           ))}
         </Slide>
