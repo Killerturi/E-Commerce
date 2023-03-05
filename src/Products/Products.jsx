@@ -15,10 +15,28 @@ const Products = ({ typeOfProduct }) => {
 
   useEffect(() => {
     getData();
-  }, []);
+  }, [typeOfProduct]);
+
+
+  const category = {
+    mobilesandtablets: "MOBILES AND TABLETS",
+    televisions: "TELEVISIONS",
+    headphones: "HEADPHONES",
+    homeappliances: "HOME-APPLIANCES",
+    computers: "COMPUTERS",
+    cameras: "CAMERAS",
+    kitchen: "KITCHEN-APPLIANCES",
+    personalcare: "PERSONAL-CARE",
+    accessories: "ACCESSORIES",
+    whishlist:"whishlist"
+  };
+
 
   return (
     <>
+ 
+    <div>
+      <h1 className="Producthading">{category[typeOfProduct]}</h1>
       <div className="products">
         {data.map((item) => {
           return (
@@ -27,6 +45,7 @@ const Products = ({ typeOfProduct }) => {
             </div>
           );
         })}
+      </div>
       </div>
     </>
   );
