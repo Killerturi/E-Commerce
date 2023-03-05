@@ -1,0 +1,17 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.boxpart {
+  /* height: 100vh; */
+  border: 2px solid;
+  width: 400px;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+/* product_text */
