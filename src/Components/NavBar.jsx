@@ -72,7 +72,7 @@ const NavBar = () => {
             Deliver to Your Address
           </Heading>
         </Flex>
-        <Link to="contactus">
+        <Link to="/contactus">
           <Flex>
             <MdConnectWithoutContact color="white" size="25px" />
             <Heading
@@ -128,7 +128,9 @@ const NavBar = () => {
               <MenuItem>My Profile</MenuItem>
               <MenuItem>My Order</MenuItem>
               <MenuItem>My Address</MenuItem>
-              <MenuItem>My Wishlist</MenuItem>             
+             <Link to="Whishlist">
+             <MenuItem>My Wishlist</MenuItem> 
+             </Link>            
               <MenuItem>Logout</MenuItem>
             </MenuList>
           </Menu>
@@ -142,6 +144,7 @@ const NavBar = () => {
         m="auto"
         bg="blue"
         px="3%"
+        py="1%"
       >
         <Menu>
           <MenuButton

@@ -6,6 +6,9 @@ import Home from "../Home/Home";
 import PrivateRoute from "./privateRoute/PrivateRoute";
 import Products from "../Products/Products";
 import SingleProduct from "../SingleProduct/SingleProduct";
+import ContactForm from "../Contacts/Contact";
+import Maincartpage from "../Cart/Maincartpage";
+
 
 const AllRoutes = () => {
   return (
@@ -14,6 +17,7 @@ const AllRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/contactus" element={<ContactForm />} />
         <Route
           path="/mobilesandtablets"
           element={
@@ -34,7 +38,7 @@ const AllRoutes = () => {
         <Route
           path="/televisions"
           element={
-            <PrivateRoute >
+            <PrivateRoute>
               <Products typeOfProduct="television" />
             </PrivateRoute>
           }
@@ -160,6 +164,14 @@ const AllRoutes = () => {
             </PrivateRoute>
           }
         ></Route>
+                <Route path="/cart" element={<PrivateRoute><Maincartpage /></PrivateRoute>}></Route>
+        <Route
+          path="/wishlist"
+          element=<PrivateRoute>
+            
+          </PrivateRoute>
+        ></Route>
+        
       </Routes>
     </>
   );
